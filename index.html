@@ -10,55 +10,65 @@
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#0ea5e9" />
     <link rel="canonical" href="https://vk-portfolio.com/" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        var img = new Image();
+        img.src = '/VK.png';
+        img.onload = function () {
+          var temp = document.createElement('canvas');
+          temp.width = img.width;
+          temp.height = img.height;
+          var tctx = temp.getContext('2d');
+          tctx.drawImage(img, 0, 0);
+          var data = tctx.getImageData(0, 0, temp.width, temp.height);
+          var d = data.data;
+          for (var i = 0; i < d.length; i += 4) {
+            var r = d[i], g = d[i + 1], b = d[i + 2];
+            if (r > 240 && g > 240 && b > 240) d[i + 3] = 0;
+          }
+          tctx.putImageData(data, 0, 0);
+          [16, 32].forEach(function (sz) {
+            var c = document.createElement('canvas');
+            c.width = sz; c.height = sz;
+            var ctx = c.getContext('2d');
+            var scale = Math.min(sz / temp.width, sz / temp.height);
+            var dw = temp.width * scale, dh = temp.height * scale;
+            var dx = (sz - dw) / 2, dy = (sz - dh) / 2;
+            ctx.clearRect(0, 0, sz, sz);
+            ctx.drawImage(temp, dx, dy, dw, dh);
+            var link = document.createElement('link');
+            link.rel = 'icon';
+            link.type = 'image/png';
+            link.sizes = sz + 'x' + sz;
+            link.href = c.toDataURL('image/png');
+            document.head.appendChild(link);
+          });
+          var ap = document.createElement('link');
+          ap.rel = 'apple-touch-icon';
+          var s = 180;
+          var ac = document.createElement('canvas');
+          ac.width = s; ac.height = s;
+          var actx = ac.getContext('2d');
+          var ascale = Math.min(s / temp.width, s / temp.height);
+          var adw = temp.width * ascale, adh = temp.height * ascale;
+          var adx = (s - adw) / 2, ady = (s - adh) / 2;
+          actx.drawImage(temp, adx, ady, adw, adh);
+          ap.href = ac.toDataURL('image/png');
+          document.head.appendChild(ap);
+        };
+      })();
+    </script>
 
     <meta property="og:title" content="Varnit Kumar | ML Engineer & Data Scientist" />
     <meta property="og:description" content="Transforming data into intelligent solutions with 98% model accuracy." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:image" content="/VK.png" />
     <meta property="og:url" content="https://vk-portfolio.com/" />
     <meta property="og:site_name" content="Varnit Kumar Portfolio" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@VarnitKumar" />
-    <meta name="twitter:image" content="/favicon.svg" />
-    <script>
-      (function () {
-        var sizes = [16, 32];
-        sizes.forEach(function (sz) {
-          var c = document.createElement('canvas'); c.width = sz; c.height = sz;
-          var ctx = c.getContext('2d');
-          var g = ctx.createLinearGradient(0, 0, sz, sz);
-          g.addColorStop(0, '#2dd4bf');
-          g.addColorStop(1, '#6366f1');
-          ctx.fillStyle = g;
-          var r = Math.round(sz * 0.22), w = sz, h = sz, x = 0, y = 0;
-          ctx.beginPath();
-          ctx.moveTo(x + r, y);
-          ctx.lineTo(x + w - r, y);
-          ctx.quadraticCurveTo(x + w, y, x + w, y + r);
-          ctx.lineTo(x + w, y + h - r);
-          ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
-          ctx.lineTo(x + r, y + h);
-          ctx.quadraticCurveTo(x, y + h, x, y + h - r);
-          ctx.lineTo(x, y + r);
-          ctx.quadraticCurveTo(x, y, x + r, y);
-          ctx.closePath();
-          ctx.fill();
-          ctx.fillStyle = '#fff';
-          ctx.font = (sz * 0.6) + 'px Inter, system-ui, sans-serif';
-          ctx.textAlign = 'center';
-          ctx.textBaseline = 'middle';
-          ctx.fillText('VK', sz / 2, sz / 2 + (sz * 0.02));
-          var link = document.createElement('link');
-          link.rel = 'icon';
-          link.type = 'image/png';
-          link.sizes = sz + 'x' + sz;
-          link.href = c.toDataURL('image/png');
-          document.head.appendChild(link);
-        });
-      })();
-    </script>
+    <meta name="twitter:image" content="/VK.png" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -67,7 +77,7 @@
       "jobTitle": "ML Engineer & Data Scientist",
       "url": "https://vk-portfolio.com/",
       "email": "mailto:kumar.varnit.16@gmail.com",
-      "image": "/favicon.ico",
+      "image": "/VK.png",
       "sameAs": [
         "https://github.com/vannu07",
         "https://linkedin.com/in/varnit-kumar"
