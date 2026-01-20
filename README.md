@@ -13,7 +13,7 @@
 
 A modern, performance-optimized portfolio built for developers seeking their next opportunity.
 
-[🌐 Live Demo](https://vk-portfolio.com) • [📖 Docs](https://github.com/vannu07/vk-portfolio/wiki) • [🐛 Report Bug](https://github.com/vannu07/vk-portfolio/issues) • [✨ Request Feature](https://github.com/vannu07/vk-portfolio/issues)
+[🌐 Live Demo](vk-syntax.vercel.app) • [📖 Docs](https://github.com/vannu07/vk-portfolio/wiki) • [🐛 Report Bug](https://github.com/vannu07/vk-portfolio/issues) • [✨ Request Feature](https://github.com/vannu07/vk-portfolio/issues)
 
 ---
 
