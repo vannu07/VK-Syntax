@@ -51,18 +51,16 @@ export default function About() {
           >
             <div className="glass glow-border rounded-2xl p-8 md:p-12">
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                I'm an <span className="text-primary font-semibold">aspiring ML Engineer</span> with 
-                6 months of hands-on industry experience at <span className="text-primary font-semibold">Amazon</span>, 
-                specializing in data analysis, machine learning model development, and end-to-end ML pipelines.
+                I am a Data Science student with hands-on industry experience at <span className="text-primary font-semibold">Amazon</span>, where I worked closely with large datasets, analytics workflows, and machine learning pipelines to support reliable, production-oriented decision-making. My experience strengthened my understanding of how data quality, collaboration, and well-structured analytical processes directly influence model performance and business outcomes.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                I have a proven track record of building production-ready ML solutions achieving 
-                <span className="text-primary font-semibold"> 98% accuracy</span>. Proficient in Python, 
-                TensorFlow, scikit-learn, and cloud deployment (AWS, GCP).
+                I work across the end-to-end data science lifecycle, including data collection, exploratory data analysis, feature engineering, statistical analysis, machine learning model development, evaluation, and interpretability. I am proficient in Python, SQL, scikit-learn, TensorFlow, and data visualization, with practical exposure to AWS and GCP in analytics and ML workflows.
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+                Through academic and independent projects in cybersecurity analytics, NLP, computer vision, and applied data science, I have built high-accuracy predictive models (up to <span className="text-primary font-semibold">98%</span>), with a strong focus on explainability, scalability, and data-driven insights rather than just model metrics.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Beyond tech, I lead the university cricket team and served as Cultural & Engagement 
-                Ambassador at Amazon, demonstrating my passion for leadership and community building.
+                I value ownership, teamwork, and continuous learning, and I thrive in collaborative environments where insights are shared and refined. Currently pursuing my Master’s in Computer Applications (<span className="text-primary font-semibold">CGPA: 9.2</span>), I am actively seeking Data Scientist roles where I can contribute meaningfully while continuing to grow as a data professional.
               </p>
             </div>
           </motion.div>

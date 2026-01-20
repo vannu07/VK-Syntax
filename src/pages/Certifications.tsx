@@ -4,6 +4,7 @@ import PageTransition from '@/components/PageTransition';
 import SectionTitle from '@/components/SectionTitle';
 import GlowCard from '@/components/GlowCard';
 import ScrollReveal from '@/components/ScrollReveal';
+import { Button } from '@/components/ui/button';
 
 const certifications = [
   {
@@ -115,6 +116,14 @@ export default function Certifications() {
             title="Certifications"
             subtitle="30+ professional credentials and achievements"
           />
+          
+          <div className="mt-4 mb-8">
+            <Button asChild variant="secondary" className="glow-border hover-glow">
+              <a href="/certificates/" target="_blank" rel="noopener noreferrer">
+                Open Certificates Folder
+              </a>
+            </Button>
+          </div>
 
           {/* Certifications Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto mb-20">

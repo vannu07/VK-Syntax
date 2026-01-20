@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Varnit Kumar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+<header class="nav">
+<a href="index.html" class="nav__brand">VK</a>
+<nav class="nav__links">
+<a href="projects.html" class="nav__link--active">Projects</a>
+<a href="skills.html">Skills</a>
+<a href="experience.html">Experience</a>
+<a href="credentials.html">Credentials</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<section class="section" id="projects">
+<div class="section__header">
+<h2>Selected Projects</h2>
+<p>High-signal work that reflects how I deliver impact.</p>
+</div>
+<div class="section__content section__content--grid">
+<article class="project-card">
+<div class="project-card__header">
+<h3>Android Malware Detection</h3>
+<span class="project-card__badge">98% Accuracy</span>
+</div>
+<p class="project-card__subtitle">Interpretable ML system for classifying Android applications as benign or malicious.</p>
+<ul class="project-card__bullets">
+<li>Designed a full pipeline using APK metadata, permissions, and behavior-derived features.</li>
+<li>Benchmarked multiple models and deployed the best-performing classifier with 98% accuracy.</li>
+<li>Used SHAP to explain per-sample predictions and highlight high-risk feature patterns.</li>
+<li>Focused on precision and recall to minimize both false positives and false negatives.</li>
+</ul>
+<div class="project-card__footer">
+<div class="project-card__stack">
+<span>Python</span>
+<span>Scikit-learn</span>
+<span>XGBoost</span>
+<span>SHAP</span>
+</div>
+<a href="https://github.com/vannu07" class="project-card__link" target="_blank" rel="noreferrer">View on GitHub</a>
+</div>
+</article>
+<article class="project-card">
+<div class="project-card__header">
+<h3>FarmIQ – AI Smart Farming</h3>
+<span class="project-card__badge">92% Crop Recommendation</span>
+</div>
+<p class="project-card__subtitle">AI platform supporting farmers with crop, disease, and weather-aware decisions.</p>
+<ul class="project-card__bullets">
+<li>Implemented a crop recommendation engine achieving 92% accuracy using soil and weather data.</li>
+<li>Built CNN-based plant disease detection covering dozens of plant disease classes.</li>
+<li>Integrated real-time weather APIs to adapt recommendations to changing conditions.</li>
+<li>Exposed predictions via a Flask REST API for dashboards and client applications.</li>
+</ul>
+<div class="project-card__footer">
+<div class="project-card__stack">
+<span>Python</span>
+<span>TensorFlow</span>
+<span>CNN</span>
+<span>Flask</span>
+<span>AWS</span>
+</div>
+<a href="https://github.com/vannu07" class="project-card__link" target="_blank" rel="noreferrer">View on GitHub</a>
+</div>
+</article>
+<article class="project-card">
+<div class="project-card__header">
+<h3>Traffic Sign Detection</h3>
+<span class="project-card__badge">Real-time</span>
+</div>
+<p class="project-card__subtitle">Computer vision pipeline for real-time traffic sign classification.</p>
+<ul class="project-card__bullets">
+<li>Trained a CNN model to classify more than 40 traffic sign classes with over 94% accuracy.</li>
+<li>Integrated OpenCV to process live video streams with sub-100ms inference latency.</li>
+<li>Applied augmentation techniques to improve robustness to angle, scale, and lighting shifts.</li>
+<li>Optimized the model for deployment on resource-constrained environments.</li>
+</ul>
+<div class="project-card__footer">
+<div class="project-card__stack">
+<span>Python</span>
+<span>TensorFlow</span>
+<span>CNN</span>
+<span>OpenCV</span>
+</div>
+<a href="https://github.com/vannu07" class="project-card__link" target="_blank" rel="noreferrer">View on GitHub</a>
+</div>
+</article>
+<article class="project-card">
+<div class="project-card__header">
+<h3>Multi-Model Sentiment Analysis</h3>
+<span class="project-card__badge">50K+ Reviews</span>
+</div>
+<p class="project-card__subtitle">Ensemble-based sentiment analysis pipeline for customer feedback.</p>
+<ul class="project-card__bullets">
+<li>Processed 50K+ text reviews and engineered TF-IDF features for multiple ML models.</li>
+<li>Combined Logistic Regression, Random Forest, and SVM in an ensemble for 90%+ accuracy.</li>
+<li>Delivered business insights on key drivers of positive and negative sentiment.</li>
+<li>Built an interactive interface for real-time sentiment exploration and what-if analysis.</li>
+</ul>
+<div class="project-card__footer">
+<div class="project-card__stack">
+<span>Python</span>
+<span>Scikit-learn</span>
+<span>NLTK</span>
+<span>TF-IDF</span>
+</div>
+<a href="https://github.com/vannu07" class="project-card__link" target="_blank" rel="noreferrer">View on GitHub</a>
+</div>
+</article>
+</div>
+</section>
+</main>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

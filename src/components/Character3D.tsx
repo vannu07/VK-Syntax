@@ -2,7 +2,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Float, Text, Sparkles } from '@react-three/drei';
 import { useRef, useMemo } from 'react';
 import * as THREE from 'three';
-import profileImage from '@/assets/vannu.jpeg';
+import profileImage from '@/assets/varnit.jpeg';
 
 function ProfileCard() {
   const meshRef = useRef<THREE.Mesh>(null);
