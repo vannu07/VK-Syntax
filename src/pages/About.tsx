@@ -60,7 +60,7 @@ export default function About() {
                 Through academic and independent projects in cybersecurity analytics, NLP, computer vision, and applied data science, I have built high-accuracy predictive models (up to <span className="text-primary font-semibold">98%</span>), with a strong focus on explainability, scalability, and data-driven insights rather than just model metrics.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I value ownership, teamwork, and continuous learning, and I thrive in collaborative environments where insights are shared and refined. Currently pursuing my Master’s in Computer Applications (<span className="text-primary font-semibold">CGPA: 9.2</span>), I am actively seeking Data Scientist roles where I can contribute meaningfully while continuing to grow as a data professional.
+                I value ownership, teamwork, and continuous learning, and I thrive in collaborative environments where insights are shared and refined. Currently pursuing my Master’s in Computer Applications (<span className="text-primary font-semibold">CGPA: 9.2</span>), I am actively seeking opportunities in Data Science, Machine Learning, and Analytics where I can contribute meaningfully while continuing to grow as a data professional.
               </p>
             </div>
           </motion.div>
