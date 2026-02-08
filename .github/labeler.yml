@@ -1,0 +1,77 @@
+# Configuration for the labeler action
+# Automatically labels pull requests based on the files changed
+
+# Workflow and CI/CD changes
+workflows:
+  - '.github/workflows/**/*'
+
+# Component changes
+components:
+  - 'src/components/**/*'
+
+# UI component changes
+ui:
+  - 'src/components/ui/**/*'
+
+# Background component changes
+backgrounds:
+  - 'src/components/backgrounds/**/*'
+
+# Page changes
+pages:
+  - 'src/pages/**/*'
+
+# Hooks changes
+hooks:
+  - 'src/hooks/**/*'
+
+# Library/utilities changes
+lib:
+  - 'src/lib/**/*'
+
+# Data changes
+data:
+  - 'src/data/**/*'
+
+# Zone changes
+zones:
+  - 'src/zones/**/*'
+
+# Test changes
+tests:
+  - 'src/test/**/*'
+  - '**/*.test.ts'
+  - '**/*.test.tsx'
+  - '**/*.spec.ts'
+  - '**/*.spec.tsx'
+  - 'vitest.config.ts'
+
+# Style changes
+styles:
+  - '**/*.css'
+  - 'tailwind.config.ts'
+  - 'postcss.config.js'
+
+# Configuration changes
+config:
+  - '*.config.js'
+  - '*.config.ts'
+  - 'tsconfig*.json'
+  - 'package.json'
+  - 'package-lock.json'
+  - 'bun.lockb'
+
+# Documentation changes
+documentation:
+  - '*.md'
+  - 'docs/**/*'
+
+# Asset changes
+assets:
+  - 'src/assets/**/*'
+  - 'public/**/*'
+
+# Build/tooling changes
+build:
+  - 'vite.config.ts'
+  - 'eslint.config.js'
